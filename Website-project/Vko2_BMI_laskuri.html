@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" type="text/css" href="CSS/BMI-Styles-css.css">
+</head>
+<body>
+    
+<div class="clearfix">
+
+<header>
+    <div class="head_container">
+    <nav>
+    <ul>
+        <li><a class="navbar_logo">LemonBerry</a></li>
+        <li><a class="active" href="Vko2_Frontpage.html">Home</a></li>
+        <li><a href="Vko2_BMI_laskuri.html">BMI</a></li>
+        <li><a href="#">Strawberries</a></li>
+    </ul>
+    </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <div class="card">
+        <img src="IMG/bmi.jpeg" alt="BMI Index chart" class= "BMIPhoto">
+        <h1>BMI-calculator</h1>
+        <p class="title">
+        With the body mass index calculator you can calculate your own
+        body mass index based on your height and weight. (BMI, Body Mass Index).
+        </p>
+
+        <form action="BMI">
+        <label for="weight">Your weight:</label>
+        <input
+            type="text"
+            id="weight"
+            name="weightname"
+            placeholder="kg"
+        >
+        <label for="height">Your height:</label>
+        <input
+            type="text"
+            id="height"
+            name="heightname"
+            placeholder="cm"
+        >
+        </form>
+
+        <button class="btn calculate">Calculate index</button>
+
+        <div class="result">
+        <p>
+             Calculation score: 
+            <span class="bmi-score">0</span></p>
+        <p>
+             Analysis:
+            <span class="analysis">You will get your analysis here</span>
+        </p>
+        </div>
+
+        <div class="bmi-table">
+            <table id="bmiTbl" class="table table-bordered">
+                <tbody>
+                    <tr class="bmi0-19">
+                        <td>Underweight</td>
+                        <td>0 - 18,9</td>
+                    </tr>
+                    <tr class="bmi19-25">
+                        <td>Normal weight</td>
+                        <td>19 - 24,9</td>
+                    </tr>
+                    <tr class="bmi25-30">
+                        <td>Overweight</td>
+                        <td>25,0 - 40,0 or more</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+</main>
+
+<footer>
+    <div class="foot_container">
+        <div class="t4">Copyright: Anna Kallio
+        </div>
+    </div>
+</footer>
+
+    <script src="JS/BMI.js"></script>
+    
+</div>
+</body>
+</html>
